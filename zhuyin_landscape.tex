@@ -1,0 +1,80 @@
+\documentclass[a4paper,10pt,landscape]{article}
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{ctex}
+\usepackage{booktabs}
+\usepackage{array}
+
+% Set fonts
+\setCJKmainfont{Kaiti TC}
+\newCJKfontfamily\hanwangfont{HanWangKaiMediumChuIn} % HanWang font for Chinese headings
+
+% Custom column types
+\newcolumntype{D}{>{\centering\arraybackslash}m{1.8cm}}
+
+% Custom commands for Zhuyin characters with increased size
+\newcommand{\zhuyinsymbol}[1]{{\fontsize{24pt}{28pt}\selectfont #1}}
+\newcommand{\categoryhead}[2]{{\Large\textbf{\hanwangfont{\fontsize{22pt}{26pt}\selectfont #1}} \textit{#2}}}
+
+\begin{document}
+
+\begin{center}
+\LARGE\textbf{\hanwangfont{\fontsize{32pt}{36pt}\selectfont 注音符號} Zhuyin Fuhao (Bopomofo)}
+\end{center}
+
+\vspace{0.5cm}
+
+% INITIALS (Consonants)
+\categoryhead{聲母}{Initials (Consonants)}
+\vspace{0.2cm}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{*{11}{D}}
+\toprule
+\zhuyinsymbol{ㄅ} & \zhuyinsymbol{ㄆ} & \zhuyinsymbol{ㄇ} & \zhuyinsymbol{ㄈ} & \zhuyinsymbol{ㄉ} & \zhuyinsymbol{ㄊ} & \zhuyinsymbol{ㄋ} & \zhuyinsymbol{ㄌ} & \zhuyinsymbol{ㄍ} & \zhuyinsymbol{ㄎ} & \zhuyinsymbol{ㄏ} \\
+b & p & m & f & d & t & n & l & g & k & h \\
+\midrule
+\zhuyinsymbol{ㄐ} & \zhuyinsymbol{ㄑ} & \zhuyinsymbol{ㄒ} & \zhuyinsymbol{ㄓ} & \zhuyinsymbol{ㄔ} & \zhuyinsymbol{ㄕ} & \zhuyinsymbol{ㄖ} & \zhuyinsymbol{ㄗ} & \zhuyinsymbol{ㄘ} & \zhuyinsymbol{ㄙ} & \\
+j & q & x & zh & ch & sh & r & z & c & s & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{1.2cm}
+
+% FINALS (Simple Vowels)
+\categoryhead{韻母}{Finals (Simple Vowels)}
+\vspace{0.2cm}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{*{10}{D}}
+\toprule
+\zhuyinsymbol{ㄚ} & \zhuyinsymbol{ㄛ} & \zhuyinsymbol{ㄜ} & \zhuyinsymbol{ㄝ} & \zhuyinsymbol{ㄞ} & \zhuyinsymbol{ㄟ} & \zhuyinsymbol{ㄠ} & \zhuyinsymbol{ㄡ} & \zhuyinsymbol{ㄢ} & \zhuyinsymbol{ㄣ} \\
+a & o & e & ê & ai & ei & ao & ou & an & en \\
+\midrule
+\zhuyinsymbol{ㄤ} & \zhuyinsymbol{ㄥ} & \zhuyinsymbol{ㄦ} & & & & & & & \\
+ang & eng & er & & & & & & & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{1.2cm}
+
+% MEDIALS (Glides)
+\categoryhead{介音}{Medials (Glides)}
+\vspace{0.2cm}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{*{3}{D}}
+\toprule
+\zhuyinsymbol{ㄧ} & \zhuyinsymbol{ㄨ} & \zhuyinsymbol{ㄩ} \\
+i/yi & u/wu & ü/yu \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\end{document}
