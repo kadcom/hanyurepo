@@ -8,6 +8,7 @@
 \usepackage{geometry}
 \usepackage{xcolor}
 \usepackage{fontspec}
+\usepackage{titling}
 
 % Page setup with narrower margins
 \geometry{
@@ -41,8 +42,33 @@
   \vspace{0.3cm}
 }
 
+% Title page settings
+\title{\Huge\bfseries TOCFL 詞彙練習表\\[1cm]
+{\Large\bfseries 流利級(Level 5)}}
+\date{\today}
+\author{}
+
 \begin{document}
 
+% Title page
+\begin{titlingpage}
+\begin{center}
+\vspace*{2cm}
+{\Huge\bfseries TOCFL 詞彙練習表}\\[1cm]
+{\huge\bfseries 流利級(Level 5)}\\[2cm]
+
+\vfill
+
+% Optional: Add an image or logo here if needed
+% \includegraphics[width=0.5\textwidth]{logo.png}\\[2cm]
+
+\vfill
+
+{\large \today}\\[1cm]
+\end{center}
+\end{titlingpage}
+
+% Content pages header
 \begin{center}
 {\LARGE\bfseries TOCFL 詞彙練習表} \\
 \vspace{0.5cm}
@@ -5609,5 +5635,7 @@
 \largehanzi{座右銘} & \practicearea \\
 \hline
 \end{longtable}
+
+
 
 \end{document}

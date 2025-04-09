@@ -1,0 +1,54 @@
+\documentclass[a4paper,12pt]{ctexart}
+
+% Using ctexart with UTF-8 encoding
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{fontspec}
+
+% Page setup with narrower margins
+\geometry{
+  a4paper,
+  margin=1.5cm,
+  includehead
+}
+
+% Set fonts
+\setCJKmainfont{Kaiti TC}  % Use Kaiti TC for main Chinese text
+\setCJKsansfont{Kaiti TC}  % Use Kaiti TC for sans-serif Chinese text
+\newCJKfontfamily\hanwangfont{HanWangKaiMediumChuIn}
+
+% Custom column format for the practice space and centered hanzi
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Custom command for large hanzi with proper vertical spacing
+\newcommand{\largehanzi}[1]{%
+  \vspace{0.2cm}
+  {\hanwangfont\fontsize{28pt}{34pt}\selectfont #1}
+  \vspace{0.2cm}
+}
+
+% Practice row with lines
+\newcommand{\practicearea}{%
+  \vspace{0.3cm}
+  \hrule
+  \vspace{0.7cm}
+  \hrule
+  \vspace{0.3cm}
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries TOCFL 詞彙練習表} \\
+\vspace{0.5cm}
+{LEVEL_PLACEHOLDER}
+\end{center}
+
+{CONTENT_PLACEHOLDER}
+
+\end{document}
