@@ -32,6 +32,7 @@ def generate_latex_preamble():
 % Set fonts
 \setCJKmainfont{Kaiti TC}  % Use Kaiti TC for main Chinese text
 \setCJKsansfont{Kaiti TC}  % Use Kaiti TC for sans-serif Chinese text
+\newCJKfontfamily\hanwangfont{HanWangKaiMediumChuIn}
 
 % Custom column format for the practice space and centered hanzi
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
@@ -40,7 +41,7 @@ def generate_latex_preamble():
 % Custom command for large hanzi with proper vertical spacing
 \newcommand{\largehanzi}[1]{%
   \vspace{0.2cm}
-  {\fontsize{28pt}{34pt}\selectfont #1}
+  {\hanwangfont\fontsize{28pt}{34pt}\selectfont #1}
   \vspace{0.2cm}
 }
 
@@ -68,22 +69,21 @@ def generate_vocab_section(title_zh, title_en, vocab_data):
     """Generate a vocabulary section."""
     latex = f"""% {title_zh} vocabulary
 \\section*{{{title_zh} ({title_en})}}
-\\begin{{longtable}}{{|C{{2.5cm}}|P{{3cm}}|P{{9.5cm}}|}}
+\\begin{{longtable}}{{|C{{5cm}}|P{{10cm}}|}}
 \\hline
 \\rowcolor[gray]{{0.9}}
-\\textbf{{漢字 (Hanzi)}} & \\textbf{{注音 (Zhuyin)}} & \\textbf{{意思 (Meaning) \\& 練習 (Practice)}} \\\\
+\\textbf{{漢字 (Hanzi)}} & \\textbf{{意思 (Meaning) \\& 練習 (Practice)}} \\\\
 \\hline
 """
     
     for _, row in vocab_data.iterrows():
         hanzi = row.get('詞彙\nVocabulary', '')
-        zhuyin = row.get('漢語拼音\nPinyin', '')  # Using Pinyin as placeholder for Zhuyin
         
         # Skip empty entries
         if not hanzi:
             continue
             
-        latex += f"\\largehanzi{{{hanzi}}} & {zhuyin} & \\practicearea \\\\\n\\hline\n"
+        latex += f"\\largehanzi{{{hanzi}}} & \\practicearea \\\\\n\\hline\n"
     
     latex += "\\end{longtable}\n\n"
     return latex
@@ -122,14 +122,14 @@ def generate_tocfl_worksheet(excel_file, output_file, level='準備級一級(Nov
                 '個人資料': 'Personal Information',
                 '工作': 'Work',
                 '教育': 'Education',
-                '房屋與家庭、環境': 'Housing, Family & Environment',
+                '房屋與家庭、環境': 'Housing, Family \\& Environment',
                 '日常生活': 'Daily Life',
-                '閒暇時間、娛樂': 'Leisure Time & Entertainment',
+                '閒暇時間、娛樂': 'Leisure Time \\& Entertainment',
                 '與他人的關係': 'Relationships with Others',
                 '旅行': 'Travel',
                 '購物': 'Shopping',
-                '飲食': 'Food & Drink',
-                '健康及身體照護': 'Health & Body Care',
+                '飲食': 'Food \\& Drink',
+                '健康及身體照護': 'Health \\& Body Care',
                 '其他': 'Others'
             }
             title_en = context_translations.get(context, context)
