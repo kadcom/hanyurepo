@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{ctexart}
+\documentclass[{PAPER_SIZE}paper,12pt]{ctexart}
 
 % Using ctexart with UTF-8 encoding
 \usepackage{booktabs}
@@ -11,8 +11,8 @@
 
 % Page setup with narrower margins
 \geometry{
-  a4paper,
-  margin=1.5cm,
+  {PAPER_SIZE}paper,
+  margin={MARGIN_SIZE},
   includehead
 }
 
@@ -28,7 +28,7 @@
 % Custom command for large hanzi with proper vertical spacing
 \newcommand{\largehanzi}[1]{%
   \vspace{0.2cm}
-  {\hanwangfont\fontsize{28pt}{34pt}\selectfont #1}
+  {\hanwangfont\fontsize{{FONT_SIZE}pt}{34pt}\selectfont #1}
   \vspace{0.2cm}
 }
 
