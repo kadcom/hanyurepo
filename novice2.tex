@@ -1,0 +1,628 @@
+\documentclass[a4paper,12pt]{ctexart}
+
+% Using ctexart with UTF-8 encoding
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{fontspec}
+
+% Page setup with narrower margins
+\geometry{
+  a4paper,
+  margin=1.5cm,
+  includehead
+}
+
+% Set fonts
+\setCJKmainfont{Kaiti TC}  % Use Kaiti TC for main Chinese text
+\setCJKsansfont{Kaiti TC}  % Use Kaiti TC for sans-serif Chinese text
+\newCJKfontfamily\hanwangfont{HanWangKaiMediumChuIn}
+
+% Custom column format for the practice space and centered hanzi
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Custom command for large hanzi with proper vertical spacing
+\newcommand{\largehanzi}[1]{%
+  \vspace{0.2cm}
+  {\hanwangfont\fontsize{28pt}{34pt}\selectfont #1}
+  \vspace{0.2cm}
+}
+
+% Practice row with lines
+\newcommand{\practicearea}{%
+  \vspace{0.3cm}
+  \hrule
+  \vspace{0.7cm}
+  \hrule
+  \vspace{0.3cm}
+}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries TOCFL 詞彙練習表} \\
+\vspace{0.5cm}
+{\Large 準備級二級(Novice 2)}
+\end{center}
+
+% 個人資料 vocabulary
+\section*{個人資料 (Personal Information)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{男} & \practicearea \\
+\hline
+\largehanzi{女} & \practicearea \\
+\hline
+\largehanzi{孩子} & \practicearea \\
+\hline
+\largehanzi{小姐} & \practicearea \\
+\hline
+\largehanzi{先生} & \practicearea \\
+\hline
+\largehanzi{太太} & \practicearea \\
+\hline
+\largehanzi{女兒} & \practicearea \\
+\hline
+\largehanzi{兒子} & \practicearea \\
+\hline
+\largehanzi{大家} & \practicearea \\
+\hline
+\largehanzi{路} & \practicearea \\
+\hline
+\largehanzi{手機} & \practicearea \\
+\hline
+\largehanzi{明年} & \practicearea \\
+\hline
+\largehanzi{去年} & \practicearea \\
+\hline
+\largehanzi{生日} & \practicearea \\
+\hline
+\largehanzi{月} & \practicearea \\
+\hline
+\largehanzi{日} & \practicearea \\
+\hline
+\largehanzi{星期} & \practicearea \\
+\hline
+\largehanzi{星期天/星期日} & \practicearea \\
+\hline
+\largehanzi{禮拜天} & \practicearea \\
+\hline
+\largehanzi{週末/周末} & \practicearea \\
+\hline
+\largehanzi{號} & \practicearea \\
+\hline
+\largehanzi{天} & \practicearea \\
+\hline
+\largehanzi{從} & \practicearea \\
+\hline
+\largehanzi{在} & \practicearea \\
+\hline
+\largehanzi{愛} & \practicearea \\
+\hline
+\largehanzi{快樂} & \practicearea \\
+\hline
+\largehanzi{太} & \practicearea \\
+\hline
+\largehanzi{公園} & \practicearea \\
+\hline
+\largehanzi{國家} & \practicearea \\
+\hline
+\largehanzi{分鐘} & \practicearea \\
+\hline
+\largehanzi{家人} & \practicearea \\
+\hline
+\largehanzi{胖} & \practicearea \\
+\hline
+\largehanzi{矮} & \practicearea \\
+\hline
+\largehanzi{瘦} & \practicearea \\
+\hline
+\largehanzi{萬} & \practicearea \\
+\hline
+\largehanzi{鐘頭} & \practicearea \\
+\hline
+\largehanzi{晚} & \practicearea \\
+\hline
+\largehanzi{前天} & \practicearea \\
+\hline
+\largehanzi{後天} & \practicearea \\
+\hline
+\largehanzi{前年} & \practicearea \\
+\hline
+\largehanzi{後年} & \practicearea \\
+\hline
+\largehanzi{自己} & \practicearea \\
+\hline
+\largehanzi{它} & \practicearea \\
+\hline
+\largehanzi{它們} & \practicearea \\
+\hline
+\largehanzi{最} & \practicearea \\
+\hline
+\largehanzi{怕} & \practicearea \\
+\hline
+\largehanzi{美} & \practicearea \\
+\hline
+\largehanzi{應該/應} & \practicearea \\
+\hline
+\largehanzi{真的} & \practicearea \\
+\hline
+\largehanzi{非常} & \practicearea \\
+\hline
+\end{longtable}
+
+% 工作 vocabulary
+\section*{工作 (Work)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{工作} & \practicearea \\
+\hline
+\largehanzi{醫生/醫師} & \practicearea \\
+\hline
+\end{longtable}
+
+% 教育 vocabulary
+\section*{教育 (Education)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{一點/一點兒/一點點} & \practicearea \\
+\hline
+\largehanzi{一些} & \practicearea \\
+\hline
+\largehanzi{本} & \practicearea \\
+\hline
+\largehanzi{張} & \practicearea \\
+\hline
+\largehanzi{英文} & \practicearea \\
+\hline
+\largehanzi{紙} & \practicearea \\
+\hline
+\largehanzi{問題} & \practicearea \\
+\hline
+\largehanzi{意思} & \practicearea \\
+\hline
+\largehanzi{餐廳/飯館} & \practicearea \\
+\hline
+\largehanzi{畫/畫兒} & \practicearea \\
+\hline
+\largehanzi{讀} & \practicearea \\
+\hline
+\largehanzi{會} & \practicearea \\
+\hline
+\largehanzi{為什麼} & \practicearea \\
+\hline
+\largehanzi{下課} & \practicearea \\
+\hline
+\largehanzi{說話} & \practicearea \\
+\hline
+\largehanzi{考試} & \practicearea \\
+\hline
+\largehanzi{懂} & \practicearea \\
+\hline
+\largehanzi{念/唸} & \practicearea \\
+\hline
+\largehanzi{課} & \practicearea \\
+\hline
+\largehanzi{教} & \practicearea \\
+\hline
+\largehanzi{告訴} & \practicearea \\
+\hline
+\largehanzi{錯} & \practicearea \\
+\hline
+\largehanzi{功課} & \practicearea \\
+\hline
+\largehanzi{教室} & \practicearea \\
+\hline
+\largehanzi{句子} & \practicearea \\
+\hline
+\largehanzi{休息} & \practicearea \\
+\hline
+\end{longtable}
+
+% 房屋與家庭、環境 vocabulary
+\section*{房屋與家庭、環境 (Housing, Family \& Environment)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{房(子)} & \practicearea \\
+\hline
+\largehanzi{房間} & \practicearea \\
+\hline
+\largehanzi{樓} & \practicearea \\
+\hline
+\largehanzi{門} & \practicearea \\
+\hline
+\largehanzi{門口} & \practicearea \\
+\hline
+\largehanzi{桌(子)} & \practicearea \\
+\hline
+\largehanzi{椅(子)} & \practicearea \\
+\hline
+\largehanzi{床} & \practicearea \\
+\hline
+\largehanzi{開} & \practicearea \\
+\hline
+\largehanzi{低} & \practicearea \\
+\hline
+\largehanzi{不錯} & \practicearea \\
+\hline
+\largehanzi{天氣} & \practicearea \\
+\hline
+\largehanzi{空氣} & \practicearea \\
+\hline
+\largehanzi{冷} & \practicearea \\
+\hline
+\largehanzi{熱} & \practicearea \\
+\hline
+\largehanzi{雨} & \practicearea \\
+\hline
+\largehanzi{下雨} & \practicearea \\
+\hline
+\largehanzi{風} & \practicearea \\
+\hline
+\largehanzi{山} & \practicearea \\
+\hline
+\largehanzi{花/花兒} & \practicearea \\
+\hline
+\largehanzi{枝} & \practicearea \\
+\hline
+\largehanzi{魚} & \practicearea \\
+\hline
+\largehanzi{雞} & \practicearea \\
+\hline
+\largehanzi{牛} & \practicearea \\
+\hline
+\largehanzi{豬} & \practicearea \\
+\hline
+\end{longtable}
+
+% 日常生活 vocabulary
+\section*{日常生活 (Daily Life)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{咖啡} & \practicearea \\
+\hline
+\largehanzi{茶} & \practicearea \\
+\hline
+\largehanzi{用} & \practicearea \\
+\hline
+\largehanzi{穿} & \practicearea \\
+\hline
+\largehanzi{起床} & \practicearea \\
+\hline
+\largehanzi{方便} & \practicearea \\
+\hline
+\largehanzi{睡覺} & \practicearea \\
+\hline
+\largehanzi{起來} & \practicearea \\
+\hline
+\end{longtable}
+
+% 閒暇時間、娛樂 vocabulary
+\section*{閒暇時間、娛樂 (Leisure Time \& Entertainment)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{先} & \practicearea \\
+\hline
+\largehanzi{常常/常} & \practicearea \\
+\hline
+\largehanzi{每} & \practicearea \\
+\hline
+\largehanzi{打} & \practicearea \\
+\hline
+\largehanzi{玩} & \practicearea \\
+\hline
+\largehanzi{運動} & \practicearea \\
+\hline
+\largehanzi{走路} & \practicearea \\
+\hline
+\largehanzi{唱歌} & \practicearea \\
+\hline
+\largehanzi{跳} & \practicearea \\
+\hline
+\largehanzi{還} & \practicearea \\
+\hline
+\largehanzi{唱} & \practicearea \\
+\hline
+\largehanzi{歌} & \practicearea \\
+\hline
+\largehanzi{跳舞} & \practicearea \\
+\hline
+\largehanzi{又} & \practicearea \\
+\hline
+\largehanzi{球} & \practicearea \\
+\hline
+\end{longtable}
+
+% 與他人的關係 vocabulary
+\section*{與他人的關係 (Relationships with Others)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{介紹} & \practicearea \\
+\hline
+\largehanzi{沒關係(˙ㄒㄧ)} & \practicearea \\
+\hline
+\largehanzi{事/事兒} & \practicearea \\
+\hline
+\largehanzi{怎麼} & \practicearea \\
+\hline
+\end{longtable}
+
+% 旅行 vocabulary
+\section*{旅行 (Travel)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{哪} & \practicearea \\
+\hline
+\largehanzi{裡面/裏面} & \practicearea \\
+\hline
+\largehanzi{上(面)} & \practicearea \\
+\hline
+\largehanzi{下(面)} & \practicearea \\
+\hline
+\largehanzi{外(面)} & \practicearea \\
+\hline
+\largehanzi{外頭(˙ㄊㄡ)} & \practicearea \\
+\hline
+\largehanzi{前(面)} & \practicearea \\
+\hline
+\largehanzi{後(面)} & \practicearea \\
+\hline
+\largehanzi{左(邊)} & \practicearea \\
+\hline
+\largehanzi{右(邊)} & \practicearea \\
+\hline
+\largehanzi{旁(邊)} & \practicearea \\
+\hline
+\largehanzi{裡/裏} & \practicearea \\
+\hline
+\largehanzi{中} & \practicearea \\
+\hline
+\largehanzi{地方} & \practicearea \\
+\hline
+\largehanzi{附近} & \practicearea \\
+\hline
+\largehanzi{帶} & \practicearea \\
+\hline
+\largehanzi{拿} & \practicearea \\
+\hline
+\largehanzi{站} & \practicearea \\
+\hline
+\largehanzi{快} & \practicearea \\
+\hline
+\largehanzi{慢} & \practicearea \\
+\hline
+\largehanzi{計程車} & \practicearea \\
+\hline
+\largehanzi{火車} & \practicearea \\
+\hline
+\largehanzi{飛機} & \practicearea \\
+\hline
+\largehanzi{輛} & \practicearea \\
+\hline
+\largehanzi{出} & \practicearea \\
+\hline
+\largehanzi{進} & \practicearea \\
+\hline
+\largehanzi{外國} & \practicearea \\
+\hline
+\end{longtable}
+
+% 健康及身體照護 vocabulary
+\section*{健康及身體照護 (Health \& Body Care)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{手} & \practicearea \\
+\hline
+\largehanzi{腳} & \practicearea \\
+\hline
+\largehanzi{身體} & \practicearea \\
+\hline
+\largehanzi{眼睛} & \practicearea \\
+\hline
+\largehanzi{鼻(子)} & \practicearea \\
+\hline
+\largehanzi{藥} & \practicearea \\
+\hline
+\largehanzi{累} & \practicearea \\
+\hline
+\largehanzi{頭} & \practicearea \\
+\hline
+\largehanzi{耳朵} & \practicearea \\
+\hline
+\largehanzi{感冒} & \practicearea \\
+\hline
+\largehanzi{生病} & \practicearea \\
+\hline
+\largehanzi{餓} & \practicearea \\
+\hline
+\largehanzi{痛} & \practicearea \\
+\hline
+\largehanzi{嘴巴/嘴} & \practicearea \\
+\hline
+\largehanzi{病} & \practicearea \\
+\hline
+\largehanzi{看病} & \practicearea \\
+\hline
+\end{longtable}
+
+% 購物 vocabulary
+\section*{購物 (Shopping)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{元} & \practicearea \\
+\hline
+\largehanzi{鞋(子)} & \practicearea \\
+\hline
+\largehanzi{衣服/衣} & \practicearea \\
+\hline
+\largehanzi{比} & \practicearea \\
+\hline
+\largehanzi{要} & \practicearea \\
+\hline
+\largehanzi{長} & \practicearea \\
+\hline
+\largehanzi{新} & \practicearea \\
+\hline
+\largehanzi{一樣} & \practicearea \\
+\hline
+\largehanzi{見} & \practicearea \\
+\hline
+\largehanzi{看見} & \practicearea \\
+\hline
+\largehanzi{聽見} & \practicearea \\
+\hline
+\largehanzi{店} & \practicearea \\
+\hline
+\largehanzi{短} & \practicearea \\
+\hline
+\largehanzi{飽} & \practicearea \\
+\hline
+\largehanzi{舊} & \practicearea \\
+\hline
+\largehanzi{像} & \practicearea \\
+\hline
+\largehanzi{一共/共} & \practicearea \\
+\hline
+\end{longtable}
+
+% 飲食 vocabulary
+\section*{飲食 (Food \& Drink)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{夠} & \practicearea \\
+\hline
+\largehanzi{筷(子)} & \practicearea \\
+\hline
+\largehanzi{件} & \practicearea \\
+\hline
+\largehanzi{杯} & \practicearea \\
+\hline
+\largehanzi{杯(子)} & \practicearea \\
+\hline
+\largehanzi{菜} & \practicearea \\
+\hline
+\largehanzi{肉} & \practicearea \\
+\hline
+\largehanzi{酒} & \practicearea \\
+\hline
+\largehanzi{喝} & \practicearea \\
+\hline
+\largehanzi{少} & \practicearea \\
+\hline
+\largehanzi{多} & \practicearea \\
+\hline
+\largehanzi{小吃} & \practicearea \\
+\hline
+\largehanzi{牛奶} & \practicearea \\
+\hline
+\largehanzi{蛋} & \practicearea \\
+\hline
+\largehanzi{餃(子)} & \practicearea \\
+\hline
+\largehanzi{麵} & \practicearea \\
+\hline
+\largehanzi{湯} & \practicearea \\
+\hline
+\largehanzi{包子} & \practicearea \\
+\hline
+\largehanzi{蛋糕} & \practicearea \\
+\hline
+\largehanzi{麵包} & \practicearea \\
+\hline
+\largehanzi{水果} & \practicearea \\
+\hline
+\largehanzi{香蕉} & \practicearea \\
+\hline
+\largehanzi{食物} & \practicearea \\
+\hline
+\largehanzi{飲料} & \practicearea \\
+\hline
+\largehanzi{果汁} & \practicearea \\
+\hline
+\largehanzi{甜} & \practicearea \\
+\hline
+\largehanzi{菜單} & \practicearea \\
+\hline
+\largehanzi{巧克力} & \practicearea \\
+\hline
+\largehanzi{碗} & \practicearea \\
+\hline
+\largehanzi{冰} & \practicearea \\
+\hline
+\end{longtable}
+
+% 其他 vocabulary
+\section*{其他 (Others)}
+\begin{longtable}{|C{5cm}|P{10cm}|}
+\hline
+\rowcolor[gray]{0.9}
+\textbf{漢字 (Hanzi)} & \textbf{意思 (Meaning) \& 練習 (Practice)} \\
+\hline
+\largehanzi{一起} & \practicearea \\
+\hline
+\largehanzi{因為} & \practicearea \\
+\hline
+\largehanzi{和} & \practicearea \\
+\hline
+\largehanzi{所以} & \practicearea \\
+\hline
+\largehanzi{跟} & \practicearea \\
+\hline
+\largehanzi{一定} & \practicearea \\
+\hline
+\largehanzi{可能} & \practicearea \\
+\hline
+\largehanzi{邊/邊兒} & \practicearea \\
+\hline
+\largehanzi{別} & \practicearea \\
+\hline
+\largehanzi{馬上} & \practicearea \\
+\hline
+\largehanzi{然後} & \practicearea \\
+\hline
+\largehanzi{得} & \practicearea \\
+\hline
+\largehanzi{著} & \practicearea \\
+\hline
+\largehanzi{有點/有一點/有一點兒} & \practicearea \\
+\hline
+\end{longtable}
+
+\end{document}
