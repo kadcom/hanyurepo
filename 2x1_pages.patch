@@ -1,0 +1,18 @@
+--- novice1.tex	2025-04-09 09:52:54.821694635 +0700
++++ novice1_2x1.tex	2025-04-09 10:10:51.482316312 +0700
+@@ -8,6 +8,8 @@
+ \usepackage{geometry}
+ \usepackage{xcolor}
+ \usepackage{fontspec}
++\usepackage{pgfpages}
++\pgfpagesuselayout{2 on 1}[a4paper,landscape,border shrink=5mm]
+ 
+ % Page setup with narrower margins
+ \geometry{
+@@ -468,4 +470,4 @@
+ \hline
+ \end{longtable}
+ 
+-\end{document}
+\ No newline at end of file
++\end{document}
